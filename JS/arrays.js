@@ -1,6 +1,6 @@
 // let fruits = ['apple','banana'];
 
-// let fruits = new Array('apple','banana');
+// let fruits = new arrayay('apple','banana');
 
 let numbers = [1,2,3,4,5];
 
@@ -38,4 +38,16 @@ let fruits = ['apple' , 'banana','mango','cherry'];
 
 console.log(fruits.slice(1,3));
 
+
+let array = [1, 2, 3, 4, 5];
+
+console.log(array);
+
+array.push(6);
+
+console.log(array);
+
+array.pop();
+
+console.log(array);
 
