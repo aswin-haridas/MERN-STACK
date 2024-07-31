@@ -2,10 +2,10 @@
     border: solid rgb(120, 120, 201) 1px;
 } */
 
-:root{
-    --beige:#F2F0E8;
-    --beige-text:#302c26;
-    --olive: #3D4134 ;
+:root {
+    --beige: #F2F0E8;
+    --beige-text: #302c26;
+    --olive: #3D4134;
     --olive-text: #dce0d2;
     --gray: #C0C0C0;
     --gray-text: #2e2e2e;
@@ -17,23 +17,30 @@
 html {
     scroll-behavior: smooth;
 }
-body, h1, nav, a, img, p {
+
+body,
+h1,
+nav,
+a,
+img,
+p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Baskerville, serif;
 }
+
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 
 
 header {
-    position: fixed; 
-    top: 0;          
-    left: 0;         
-    right: 0;        
-    z-index: 1000;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +49,7 @@ header {
 }
 
 #logo {
-    font-size: 1.8em; 
+    font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 3px;
     color: #333;
@@ -52,7 +59,7 @@ nav {
     display: flex;
     gap: 20px;
     justify-content: center;
-    position: relative; 
+    position: relative;
     right: 0;
 }
 
@@ -61,7 +68,7 @@ nav a {
     color: #555;
     font-size: 16px;
     padding: 8px 12px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -71,7 +78,7 @@ nav a:hover {
 .content {
     height: 500px;
     padding-left: 32px;
-    
+
 }
 
 .content h1 {
@@ -88,14 +95,15 @@ nav a:hover {
 .gallery {
     display: grid;
     width: 80%;
-    margin: 0 auto; /* Center the gallery */
+    margin: 0 auto;
+  
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px; /* Adjusted gap for better spacing */
+    gap: 10px;
     padding: 20px 0;
 }
 
 section {
-    padding-top: 18%; /* Adjust padding for content alignment */
+    padding-top: 18%;
 }
 
 .grid-item {
@@ -116,19 +124,22 @@ section {
 }
 
 
-#beige{
-    background-color: #F2F0E8 ;
-    color: #302c26 ;
+#beige {
+    background-color: #F2F0E8;
+    color: #302c26;
 }
-#olive{
-    background-color: #3D4134 ;
+
+#olive {
+    background-color: #3D4134;
     color: #dce0d2;
 }
-#gray{
+
+#gray {
     background-color: #C0C0C0;
     color: #2e2e2e;
 }
-#ice{
+
+#ice {
     background-color: #cadfea;
     color: #2a2d2e;
 }
