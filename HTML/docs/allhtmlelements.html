@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All HTML Elements</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#heading">Heading Elements</a>
+        <a href="#text">Text Elements</a>
+        <a href="#list">List Elements</a>
+        <a href="#table">Table Elements</a>
+        <a href="#form">Form Elements</a>
+        <a href="#media">Media Elements</a>
+    </nav>
+
+    <section id="heading">
+        <h2>Heading Elements</h2>
+        <h1>h1 Heading</h1>
+        <h2>h2 Heading</h2>
+        <h3>h3 Heading</h3>
+        <h4>h4 Heading</h4>
+        <h5>h5 Heading</h5>
+        <h6>h6 Heading</h6>
+    </section>
+
+    <section id="text">
+        <h2>Text Elements</h2>
+        <p>This is a paragraph element.</p>
+        <strong>This is a strong element.</strong>
+        <em>This is an emphasis element.</em>
+        <blockquote>This is a blockquote element.</blockquote>
+        <code>This is a code element.</code>
+        <span>This is a span element.</span>
+        <a href="#">This is an anchor element.</a>
+    </section>
+
+    <section id="list">
+        <h2>List Elements</h2>
+        <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+            <li>Unordered List Item 3</li>
+        </ul>
+        <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+            <li>Ordered List Item 3</li>
+        </ol>
+        <dl>
+            <dt>Definition List Term 1</dt>
+            <dd>Definition List Description 1</dd>
+            <dt>Definition List Term 2</dt>
+            <dd>Definition List Description 2</dd>
+        </dl>
+    </section>
+
+    <section id="table">
+        <h2>Table Elements</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr>
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Form Elements</h2>
+        <form action="#">
+            <label for="text-input">Text Input:</label>
+            <input type="text" id="text-input" name="text-input"><br><br>
+            <label for="password-input">Password Input:</label>
+            <input type="password" id="password-input" name="password-input"><br><br>
+            <label for="checkbox-input">Checkbox Input:</label>
+            <input type="checkbox" id="checkbox-input" name="checkbox-input"><br><br>
+            <label for="radio-input">Radio Input:</label>
+            <input type="radio" id="radio-input" name="radio-input"><br><br>
+            <label for="textarea">Textarea:</label>
+            <textarea id="textarea" name="textarea"></textarea><br><br>
+            <label for="select">Select:</label>
+            <select id="select" name="select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="media">
+        <h2>Media Elements</h2>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        <br><br>
+        <audio controls>
+            <source src="audio-sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <video width="320" height="240" controls>
+            <source src="video-sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</body>
+
+</html>
