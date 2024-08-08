@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f0c040;
+}
+
+.signup-btn {
+    padding: 5px 10px;
+    background-color: #f0c040;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #ffde5c;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #000;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #f0c040;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #ffde5c;
+}
+
+/* Collections Section */
+.collections {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.collections h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.collection-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.collection-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+}
+
+.collection-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.collection-item p {
+    padding: 0 10px 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.collection-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Signup Page */
+.signup {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.signup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #f0c040;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #ffde5c;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .collections {
+        padding: 30px 0;
+    }
+
+    .collections h2 {
+        font-size: 1.5rem;
+    }
+}

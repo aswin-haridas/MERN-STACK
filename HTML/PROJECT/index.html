@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex Watches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Rolex Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Discover the Elegance of Rolex Watches</h1>
+            <p>Timeless luxury watches crafted with precision and style.</p>
+            <a href="#" class="explore-btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <section class="collections">
+        <div class="container">
+            <h2>Our Collections</h2>
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <img src="images/watch.jpg" alt="Rolex Watch">
+                    <h3>Submariner</h3>
+                    <p>The classic diving watch.</p>
+                </div>
+                <div class="collection-item">
+                    <img src="images/watch.jpg" alt="Rolex Watch">
+                    <h3>Day-Date</h3>
+                    <p>The ultimate prestige watch.</p>
+                </div>
+                <div class="collection-item">
+                    <img src="images/watch.jpg" alt="Rolex Watch">
+                    <h3>Explorer</h3>
+                    <p>The watch for adventure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rolex Watches. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
